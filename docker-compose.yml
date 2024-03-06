@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  mysql:
+    image: mariadb:10.5.8
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: password123
+      MYSQL_DATABASE: user-management
+      MYSQL_USER: um-user
+      MYSQL_PASSWORD: umpassword123
+    ports:
+      - 3306:3306
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
