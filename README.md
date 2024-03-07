@@ -27,8 +27,12 @@ If yarn is not installed, use the following link to install it: [Yarn](https://y
 ## Running the app
 
 ```bash
-# Run docker
+cd <YOUR_PROJECT_DIR>
+# Run docker in terminal
 $ docker-compose up
+
+# Wait till docker is ready and in another terminal tab install dependancies 
+$ yarn install
 
 # development
 $ yarn run start
