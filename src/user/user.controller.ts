@@ -2,7 +2,6 @@ import {
   Controller,
   Get,
   Post,
-  Patch,
   Delete,
   Param,
   Body,
@@ -14,7 +13,7 @@ import { UserDto } from './dtos/user.dto';
 import { ApiTags } from '@nestjs/swagger';
 
 @ApiTags('User')
-@Controller('user')
+@Controller('users')
 @Serialize(UserDto)
 export class UserController {
   constructor(
