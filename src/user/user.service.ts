@@ -25,6 +25,7 @@ export class UserService {
       });
       return this.repo.save(user);
     } catch (e) {
+      console.log(e, userData)
       throw new BadRequestException('Problem with payload data. Check and try again');
     }
   }

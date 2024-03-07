@@ -7,8 +7,8 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: password123
       MYSQL_DATABASE: user-management
-      MYSQL_USER: um-user
-      MYSQL_PASSWORD: umpassword123
+      MYSQL_USER: root
+      MYSQL_PASSWORD: password123
     ports:
       - 3306:3306
   adminer:
